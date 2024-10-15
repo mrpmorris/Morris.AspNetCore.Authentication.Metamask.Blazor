@@ -1,5 +1,7 @@
 # Morris.AspNetCore.Authentication.Metamask.Blazor
-Metamask auth for Blazor apps.
+![](./Images/logo.png)
+
+Metamask authentication for Blazor applications.
 
 1. Create a new Blazor web app with authentication.
 2. In Program.cs add `using Morris.AspNetCore.Authentication.Metamask.Blazor;`
