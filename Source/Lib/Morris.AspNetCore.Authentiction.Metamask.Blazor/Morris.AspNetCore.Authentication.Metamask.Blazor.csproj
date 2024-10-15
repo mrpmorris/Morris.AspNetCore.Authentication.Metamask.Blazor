@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Remove="wwwroot\scripts\metamask-sign-payload.js" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.10" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+		<PackageReference Include="Nethereum.Signer" Version="4.26.0">
+			<PrivateAssets>All</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <UpToDateCheckInput Remove="components\_Imports.razor" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <_ContentIncludedByDefault Remove="components\_Imports.razor" />
+	  <_ContentIncludedByDefault Remove="wwwroot\scripts\metamask-sign-payload.js" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="wwwroot\scripts\metamask-sign-payload.js" />
+	</ItemGroup>
+
+</Project>
