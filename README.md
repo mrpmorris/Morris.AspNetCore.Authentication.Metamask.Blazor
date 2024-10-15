@@ -1,4 +1,4 @@
-# Morris.AspNetCore.Authentiction.Metamask.Blazor
+# Morris.AspNetCore.Authentication.Metamask.Blazor
 Metamask auth for Blazor apps.
 
 1. Create a new Blazor web app with authentication.

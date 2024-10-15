@@ -4,6 +4,9 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<Description>Metmask auth for ASP.NET</Description>
+		<PackageIcon>logo-small.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -33,6 +36,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Include="..\..\..\Images\logo-small.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\..\..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	  <None Include="wwwroot\scripts\metamask-sign-payload.js" />
 	</ItemGroup>
 

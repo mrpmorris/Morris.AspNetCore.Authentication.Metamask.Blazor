@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Morris.AspNetCore.Authentication.Metamask.Blazor", "Lib\Morris.AspNetCore.Authentiction.Metamask.Blazor\Morris.AspNetCore.Authentication.Metamask.Blazor.csproj", "{67A8CCDD-8546-4067-9D08-DB49AFF999DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Morris.AspNetCore.Authentication.Metamask.Blazor", "Lib\Morris.AspNetCore.Authentication.Metamask.Blazor\Morris.AspNetCore.Authentication.Metamask.Blazor.csproj", "{67A8CCDD-8546-4067-9D08-DB49AFF999DB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{C9D9D741-A473-4CFE-9FC6-F7620B7BE543}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{99D229EF-11D6-4DF6-9677-B127813FA73E}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\Directory.Build.props = Lib\Directory.Build.props
 	EndProjectSection
 EndProject
 Global
@@ -23,6 +29,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67A8CCDD-8546-4067-9D08-DB49AFF999DB} = {99D229EF-11D6-4DF6-9677-B127813FA73E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8C5EEAA4-45C0-414A-A2BA-0C4B50DFE477}
