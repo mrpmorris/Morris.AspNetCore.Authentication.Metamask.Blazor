@@ -9,10 +9,6 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <Content Remove="wwwroot\scripts\metamask-sign-payload.js" />
-	</ItemGroup>
-
 
 	<ItemGroup>
 		<SupportedPlatform Include="browser" />
@@ -32,7 +28,6 @@
 
 	<ItemGroup>
 	  <_ContentIncludedByDefault Remove="components\_Imports.razor" />
-	  <_ContentIncludedByDefault Remove="wwwroot\scripts\metamask-sign-payload.js" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -44,7 +39,6 @@
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
-	  <None Include="wwwroot\scripts\metamask-sign-payload.js" />
 	</ItemGroup>
 
 </Project>

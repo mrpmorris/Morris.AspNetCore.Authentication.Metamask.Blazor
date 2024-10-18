@@ -3,48 +3,47 @@
 @inject NavigationManager NavigationManager
 @inject IOptions<MetamaskOptions> Options
 
-<h1>Login with Metamask</h1>
+<div id="morris-metamask-select-wallet">
+    <h1>Login with Metamask</h1>
 
-<EditForm @ref=EditForm FormName="LogIn" Model=@Model OnSubmit=Save>
-    <DataAnnotationsValidator />
-    <ValidationSummary />
+    <EditForm @ref=EditForm FormName="LogIn" Model=@Model OnSubmit=Save>
+        <DataAnnotationsValidator />
+        <ValidationSummary />
 
-    <div class="row">
-        <div class="col">
-            @if (!Accounts.Any())
-            {
-                <label>
-                    Account number
-                    <div class="input-group">
-                        <input class="form-control" @bind="@Model.Account" name="Model.Account" />
-                        <button id="selectAccountButton" type="button" class="btn btn-secondary" style="display:none">Select</button>
-                    </div>
-                </label>
-            }
-            else
-            {
-                <label for="account">
-                    Select your account number
+        <div class="row">
+            <div class="col">
+                @if (!Accounts.Any())
+                {
+                    <label>
+                        Account number
+                        <div class="input-group">
+                            <input class="form-control" @bind="@Model.Account" name="Model.Account" />
+                            <button id="selectAccountButton" type="button" class="btn btn-secondary" style="display:none">Select</button>
+                        </div>
+                    </label>
+                }
+                else
+                {
+                    <label for="account">
+                        Select your account number
 
-                    <div>
-                        <select class="form-control" @bind="@Model.Account" name="Model.Account">
-                            @foreach (string account in Accounts)
-                            {
-                                <option value="@account">@account</option>
-                            }
-                        </select>
-                    </div>
-                </label>
-            }
+                        <div>
+                            <select class="form-control" @bind="@Model.Account" name="Model.Account">
+                                @foreach (string account in Accounts)
+                                {
+                                    <option value="@account">@account</option>
+                                }
+                            </select>
+                        </div>
+                    </label>
+                }
+            </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
-            <button class="btn btn-primary" type="submit">Next &gt;&gt;</button>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary" type="submit">Next &gt;&gt;</button>
+            </div>
         </div>
-    </div>
-</EditForm>
-
-
-<script src="/_content/Morris.AspNetCore.Authentication.Metamask.Blazor/scripts/metamask-select-wallet.js"></script>
+    </EditForm>
+</div>
