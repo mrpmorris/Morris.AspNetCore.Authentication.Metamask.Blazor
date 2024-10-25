@@ -43,3 +43,7 @@ change to
 @using Morris.AspNetCore.Authentication.Metamask.Blazor
 <Router AppAssembly="typeof(Program).Assembly" AdditionalAssemblies=@([typeof(MetamaskOptions).Assembly])>
 ```
+6. Edit your `App.razor` and add the required javascript reference after the `Blazor` javascript reference.
+```html
+<script src="_content/Morris.AspNetCore.Authentication.Metamask.Blazor/scripts/index.js"></script>
+```
